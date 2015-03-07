@@ -1,0 +1,69 @@
+# deb cdrom:[Debian GNU/Linux testing _Jessie_ - Official Snapshot amd64 CD Binary-1 20141117-06:43]/ jessie main
+
+deb http://mirror.yandex.ru/debian/ jessie main non-free contrib
+deb-src http://mirror.yandex.ru/debian/ jessie main non-free contrib
+
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+
+# jessie-updates, previously known as 'volatile'
+# Line commented out by installer because it failed to verify:
+#deb http://mirror.yandex.ru/debian/ jessie-updates main
+#deb-src http://mirror.yandex.ru/debian/ jessie-updates main
+
+# jessie-backports, previously on backports.debian.org
+# Line commented out by installer because it failed to verify:
+deb http://mirror.yandex.ru/debian/ jessie-backports main
+deb-src http://mirror.yandex.ru/debian/ jessie-backports main
+
+# Backports
+deb http://http.debian.net/debian jessie-backports main
+
+# Multimedia
+deb http://www.deb-multimedia.org jessie main non-free
+
+# PostgreSQL
+# wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+# gpg --keyserver keys.gnupg.net --recv-key D208507CA14F4FCA
+# gpg -a --export D208507CA14F4FCA | apt-key add -
+# deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main
+
+# rsyslog
+# apt-key adv --recv-keys --keyserver keys.gnupg.net AEF0CF8E
+# gpg --export --armor AEF0CF8E | apt-key add -
+# deb http://debian.adiscon.com/v8-stable wheezy/
+# deb-src http://debian.adiscon.com/v8-stable wheezy/
+
+# google
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+deb http://dl.google.com/linux/chrome/deb/ stable main
+# deb http://dl.google.com/linux/earth/deb/ stable main
+
+# MongoDB
+# apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+# deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen
+
+# RabbitMQ
+# wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+# apt-key add rabbitmq-signing-key-public.asc
+deb http://www.rabbitmq.com/debian/ testing main
+
+# Erlang
+# wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc | apt-key add erlang_solutions.asc
+# deb http://packages.erlang-solutions.com/debian wheezy contrib
+
+# Opera
+# wget -O - http://deb.opera.com/archive.key | apt-key add -
+# deb http://deb.opera.com/opera/ stable non-free
+
+# VirtualBox
+# wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
+# deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
+
+# Zabbix
+# gpg --keyserver keys.gnupg.net --recv-key D13D58E479EA5ED4
+# gpg -a --export D13D58E479EA5ED4 | apt-key add -
+# deb http://repo.zabbix.com/zabbix/2.4/debian wheezy main
+# deb-src http://repo.zabbix.com/zabbix/2.4/debian wheezy main
+
+deb http://archive.ubuntugames.org ubuntugames main
